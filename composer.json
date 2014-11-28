@@ -1,0 +1,20 @@
+{
+    "name": "hispavista/solve-media-bundle",
+    "description": "Symfony bundle for use the solve media api",
+    "require": {
+        "symfony/framework-bundle": ">=2.3",
+        "dominionenterprises/solvemedia-client": "0.1.0@dev"
+    },
+    "authors": [
+        {
+            "name": "Hispavista Labs",
+            "email": "hispavista.desarrollo@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Hispavista\\SolveMediaBundle": ""
+        }
+    },
+    "target-dir": "Hispavista/SolveMediaBundle"
+}
