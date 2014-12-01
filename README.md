@@ -46,7 +46,7 @@ hispavista_solve_media:
     challenge_key: your_challenge_key
     verification_key: your_verification_key
     autenticathion_key: your authenticacion_key
-
+```
 
 ### Step 4: Use it!!
 In your form type
@@ -59,3 +59,4 @@ $builder->add('captcha', 'hispavista_solvemediacaptcha',array(
     'config' => array('theme'=> 'white', 'lang' => 'es')
  ));
 ...
+```
