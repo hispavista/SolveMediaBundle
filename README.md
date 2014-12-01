@@ -6,7 +6,7 @@ Installation is quick and easy, 3 steps process
 
 1. Install SolveMediaBundle
 2. Enable the bundle
-3. Initialize assets
+3. Configure the bundle
 
 ### Step 1: Install SolveMediaBundle
 
