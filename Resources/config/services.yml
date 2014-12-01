@@ -1,0 +1,13 @@
+parameters:
+    #hispavista_solve_media.challenge_key: %hispavista_solve_media.challenge_key%
+    
+services:
+    hispavista.solve_media.form.solve_media_captcha_validator:
+        class: Hispavista\SolveMediaBundle\Form\Validator\SolveMediaCaptchaValidator
+        arguments: [@request=, %hispavista_solve_media.verification_key%, %hispavista_solve_media.autenticathion_key%, @translator]
+            
+    hispavista_solve_media.form.solve_media_captcha:
+        class: Hispavista\SolveMediaBundle\Form\Type\SolveMediaCaptchaType
+        arguments: [%hispavista_solve_media.challenge_key%, @hispavista.solve_media.form.solve_media_captcha_validator]
+        tags:
+            - {name: form.type, alias: hispavista_solvemediacaptcha}

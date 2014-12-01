@@ -1,0 +1,3 @@
+hispavista_solve_media_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: HispavistaSolveMediaBundle:Default:index }

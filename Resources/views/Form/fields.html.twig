@@ -1,0 +1,18 @@
+{% block hispavista_solvemediacaptcha_widget %}
+    <script type="text/javascript">
+        var ACPuzzleOptions = {
+            theme:	'{{ config.theme}}',
+            lang:	'{{ config.lang }}',
+            size:	'300x150'
+        };
+    </script>
+    <script type="text/javascript"
+            src="https://api-secure.solvemedia.com/papi/challenge.script?k={{challengeKey}}">
+    </script>
+    <noscript>
+    <iframe src="://api.solvemedia.com/papi/challenge.noscript?k={{challengeKey}}" height="300" width="500" frameborder="0"></iframe><br/>
+    <textarea name="adcopy_challenge" rows="3" cols="40"></textarea>
+    <input type="hidden" name="adcopy_response" value="manual_challenge"/>
+    </noscript>
+    {{form_errors(form)}}
+{% endblock %}

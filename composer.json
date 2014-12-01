@@ -2,8 +2,7 @@
     "name": "hispavista/solve-media-bundle",
     "description": "Symfony bundle for use the solve media api",
     "require": {
-        "symfony/framework-bundle": ">=2.3",
-        "dominionenterprises/solvemedia-client": "0.1.0@dev"
+        "symfony/framework-bundle": ">=2.3"
     },
     "authors": [
         {
