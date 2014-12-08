@@ -34,7 +34,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Hispavista\SolveMediaBundle\SolveMediaBundle(),
+        new Hispavista\SolveMediaBundle\HispavistaSolveMediaBundle(),
     );
 }
 ```
