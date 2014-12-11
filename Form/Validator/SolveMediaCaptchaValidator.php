@@ -27,7 +27,6 @@ class SolveMediaCaptchaValidator implements EventSubscriberInterface {
      * @param string $privateKey
      */
     public function __construct(Request $request, $privateKey, $hashKey, $translator) {
-        $this->options = $opions;
         $this->request = $request;
         $this->privateKey = $privateKey;
         $this->hashKey = $hashKey;
